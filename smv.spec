@@ -1,4 +1,5 @@
 Summary:	SMV - symbolic model verifier
+Summary(pl):	SMV - narzêdzie do weryfikacji modeli symbolicznych
 Name:		smv
 Version:	2.5.4.3
 Release:	0.1
@@ -10,20 +11,25 @@ URL:		http://www-2.cs.cmu.edu/~modelcheck/smv.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+SMV - symbolic model verifier.
+
+%description -l pl
+SMV - narzêdzie do weryfikacji modeli symbolicznych.
 
 %prep
 %setup -q -n %{name}
 
 %build
-%{__make} OPTFLAGS="%{rpmcflags}"
+%{__make} \
+	OPTFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_examplesdir}/%{name}-%{version}}
 
-install smv $RPM_BUILD_ROOT%{_bindir}/
-install smv.1 $RPM_BUILD_ROOT%{_mandir}/man1/
-install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/
+install smv $RPM_BUILD_ROOT%{_bindir}
+install smv.1 $RPM_BUILD_ROOT%{_mandir}/man1
+install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
