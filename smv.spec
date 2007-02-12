@@ -1,5 +1,5 @@
 Summary:	SMV - symbolic model verifier
-Summary(pl.UTF-8):   SMV - narzędzie do weryfikacji modeli symbolicznych
+Summary(pl.UTF-8):	SMV - narzędzie do weryfikacji modeli symbolicznych
 Name:		smv
 Version:	2.5.4.3
 Release:	0.1
