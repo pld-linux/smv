@@ -1,5 +1,5 @@
 Summary:	SMV - symbolic model verifier
-Summary(pl):	SMV - narzêdzie do weryfikacji modeli symbolicznych
+Summary(pl.UTF-8):   SMV - narzÄ™dzie do weryfikacji modeli symbolicznych
 Name:		smv
 Version:	2.5.4.3
 Release:	0.1
@@ -13,8 +13,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 SMV - symbolic model verifier.
 
-%description -l pl
-SMV - narzêdzie do weryfikacji modeli symbolicznych.
+%description -l pl.UTF-8
+SMV - narzÄ™dzie do weryfikacji modeli symbolicznych.
 
 %prep
 %setup -q -n %{name}
