@@ -2,8 +2,8 @@ Summary:	SMV - symbolic model verifier
 Summary(pl.UTF-8):	SMV - narzędzie do weryfikacji modeli symbolicznych
 Name:		smv
 Version:	2.5.4.3
-Release:	0.1
-License:	No fscking idea :o
+Release:	1
+License:	Unknown
 Group:		Development/Tools
 Source0:	http://www-2.cs.cmu.edu/~modelcheck/smv/%{name}.r%{version}.tar.gz
 # Source0-md5:	dd1a7ebcbac935845fc73eb8957386cb
