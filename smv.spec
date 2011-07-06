@@ -20,7 +20,7 @@ SMV - narzędzie do weryfikacji modeli symbolicznych.
 %setup -q -n %{name}
 
 %build
-%{__make} \
+%{__make} -j 1 \
 	OPTFLAGS="%{rpmcflags}"
 
 %install
